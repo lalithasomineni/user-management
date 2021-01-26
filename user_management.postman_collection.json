@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "7e31dde0-77aa-456c-9125-4ac28b01fc5f",
+		"name": "user_management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get user by role and created date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/byrole/bydate/?date=2014,1,11&role=superadmin-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"byrole",
+						"bydate",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2014,1,11"
+						},
+						{
+							"key": "role",
+							"value": "superadmin-0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users by role",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/byrole/?role=admin-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"byrole",
+						""
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "admin-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get users by date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/bydate/?date=2014,1,11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"bydate",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2014,1,11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"karthik\",\n    \"email\": \"karthik@gmail.com\",\n    \"password\": \"lalli9533\",\n    \"role\": \"superadmin-0\",\n    \"createdDate\": \"2014-10-09\",\n    \"updatedDate\": \"2020-01-12\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
